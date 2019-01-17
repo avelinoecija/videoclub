@@ -22,9 +22,9 @@ Route::get('/contacto', 'PaginasController@contacto');
 Route::get('/welcome', 'PagesController@welcome');
 Route::get('/autenticacion/conexion', 'PaginasController@conexion');
 Route::get('/autenticacion/logout', 'PaginasController@logout');
-Route::get('/catalog/index', 'PaginasController@index');
-Route::get('/catalog/show/{id?}', 'PaginasController@show');
-Route::get('/catalog/create', 'PaginasController@create');
-Route::get('/catalog/edit/{id?}', 'PaginasController@edit');
-Route::get('/', 'PaginasController@home');
+Route::get('/catalog/index', 'CatalogController@getIndex');
+Route::get('/catalog/show/{id}', 'CatalogController@getShow');
+Route::get('/catalog/create', 'CatalogController@getCreate');
+Route::get('/catalog/edit/{id}', 'CatalogController@getEdit');
+Route::get('/', 'HomeController@getHome');
 
