@@ -28,3 +28,4 @@ Route::get('/catalog/create', 'CatalogController@getCreate');
 Route::get('/catalog/edit/{id}', 'CatalogController@getEdit');
 Route::get('/', 'HomeController@getHome');
 
+

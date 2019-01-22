@@ -21,7 +21,7 @@
         		<p>Estado: Pelicula actualmente alquilada</p>
         		<a class="btn btn-danger" href="#" role="button">Devolver pelicula</a>
         	@endif
-        	<a class="btn btn-warning" href="{{ url('/catalog/edit/{$id}') }}" role="button">Editar pelicula</a>
+        	<a class="btn btn-warning" href="{{ url('/catalog/edit/'.$arrayPeliculas->id ) }}" role="button">Editar pelicula</a>
         	<a class="btn btn-default" href="{{ url('/catalog/index') }}" role="button">Volver al listado</a>
 		</div>
 	</div>
