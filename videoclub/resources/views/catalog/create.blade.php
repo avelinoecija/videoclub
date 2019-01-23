@@ -1,5 +1,4 @@
 @extends('layouts.master')
-@section('title', 'create')
 @section('content')
 	<h1>Añadir película</h1>
 
@@ -13,7 +12,7 @@
 
             		<form class="col-md-12" action="#" method="POST">
 
-            			{{-- TODO: Protección contra CSRF --}}
+            			{{ csrf_field() }}
 
             			<div class="form-group">
                				<label for="title">Título</label>
